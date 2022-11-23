@@ -1,13 +1,9 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-
 public class Main {
 
     private  static final String INVALID_VALUE_MESSAGE = "Invalid value";
     public static void main(String[] args) {
         System.out.println(getDurationString(65, 45));
-        //System.out.println(getDurationString(3945L));
+        System.out.println(getDurationString(5432));
         //System.out.println("Remaining: " + 110 % 60);
     }
 
@@ -54,7 +50,9 @@ public class Main {
         }
 
         long minutes = seconds / 60;
+        long remainingSeconds = seconds % 60;
 
+        return getDurationString(minutes, remainingSeconds);
     }
 
     /*public static int getDurationString(int seconds){
