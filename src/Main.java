@@ -1,6 +1,10 @@
 public class Main {
 
+    //CONSTANT Declaration
     private  static final String INVALID_VALUE_MESSAGE = "Invalid value";
+    public static final double Pi = 3.1415;
+    //-------------------------------------------------------------------
+
     public static void main(String[] args) {
         System.out.println(getDurationString(65, 45));
         System.out.println(getDurationString(5432));
